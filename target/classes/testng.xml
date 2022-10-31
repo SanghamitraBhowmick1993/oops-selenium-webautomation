@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="E2E Test Framework" parallel="false">
+	<!-- <listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners> -->
+
+	<test name="my e2e test chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<!--<class name="com.mytests.LandingTest" />-->
+			<!--<class name="com.mytests.ProductTest" />-->
+			<class name="com.mytests.PaymentTest" />
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

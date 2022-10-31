@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [E2E Test Framework]">
+  <test thread-count="5" name="my e2e test chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.mytests.PaymentTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="setUpTest"/>
+          <include name="enterCardDetailsandMakePayment"/>
+          <include name="afterTest"/>
+          <include name="tearDownSuite"/>
+          <include name="capture"/>
+        </methods>
+      </class> <!-- com.mytests.PaymentTest -->
+    </classes>
+  </test> <!-- my e2e test chrome(failed) -->
+</suite> <!-- Failed suite [E2E Test Framework] -->
